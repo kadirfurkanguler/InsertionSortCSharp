@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -39,7 +39,15 @@ namespace Insertion_Sort
         /// <returns></returns>
         public int[] Cagir()
         {
-            return this.dizi;
+            // Eğer Add metotu kullanılamışsa null değer geri döndürülüyor.
+            if (this.dizi == null)
+            {
+                return null;
+            }
+            else
+            {
+                return this.dizi;
+            }
         }
         /// <summary>
         /// Add metotundan gelen verileri Insertion Sort algoritmasına göre sıralayan ve sıraladıktan sonra dizi adlı değişkene eşitleyen metot.
